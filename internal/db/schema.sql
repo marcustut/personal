@@ -31,7 +31,8 @@ CREATE TABLE public.todos (
     title text NOT NULL,
     description text,
     completed boolean DEFAULT false NOT NULL,
-    created_at timestamp without time zone DEFAULT now()
+    created_at timestamp without time zone DEFAULT now(),
+    updated_at timestamp without time zone DEFAULT now()
 );
 
 
@@ -88,4 +89,5 @@ ALTER TABLE ONLY public.todos
 --
 
 INSERT INTO public.schema_migrations (version) VALUES
+    ('20210821141514'),
     ('20210821174839');

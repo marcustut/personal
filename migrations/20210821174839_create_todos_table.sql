@@ -1,5 +1,5 @@
 -- migrate:up
-CREATE TABLE todos (
+CREATE TABLE public.todos (
     id          SERIAL PRIMARY KEY,
     title       TEXT NOT NULL,
     description TEXT, 
@@ -8,4 +8,4 @@ CREATE TABLE todos (
 );
 
 -- migrate:down
-DROP TABLE todos;
+DROP TABLE public.todos;
