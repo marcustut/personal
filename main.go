@@ -5,6 +5,7 @@ import (
 
 	"github.com/joho/godotenv"
 	"github.com/marcustut/personal/internal/app"
+	"github.com/marcustut/personal/internal/config"
 )
 
 func init() {
@@ -15,6 +16,9 @@ func init() {
 }
 
 func main() {
-	app := app.New()
-	app.Run(8080)
+	a := app.New()
+
+	ap := app.AppParams{Port: config.Port(), DbUrl: config.DatabaseUrl()}
+
+	a.Run(ap)
 }

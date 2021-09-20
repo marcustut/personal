@@ -89,5 +89,5 @@ ALTER TABLE ONLY public.todos
 --
 
 INSERT INTO public.schema_migrations (version) VALUES
-    ('20210821141514'),
-    ('20210821174839');
+    ('20210821174839'),
+    ('20210821181514');
