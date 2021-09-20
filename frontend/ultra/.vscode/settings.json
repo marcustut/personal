@@ -3,5 +3,8 @@
     "deno.lint": true,
     "deno.unstable": true,
     "deno.importMap": "./importmap.json",
-    "deno.config": "./tsconfig.json"
+    "deno.config": "./tsconfig.json",
+    "deno.suggest.imports.hosts": {
+        "https://cdn.skypack.dev": false
+    }
 }

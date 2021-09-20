@@ -6,7 +6,6 @@
 		"helmet": "https://esm.sh/react-helmet-async?deps=react@18.0.0-alpha-bc9bb87c2-20210917&bundle",
 		"wouter": "https://esm.sh/wouter?deps=react@18.0.0-alpha-bc9bb87c2-20210917&bundle",
 		"swr": "https://esm.sh/swr@1.0.0?deps=react@18.0.0-alpha-bc9bb87c2-20210917&bundle",
-		"ultra/cache": "https://deno.land/x/ultra@v0.3/cache.js",
-		"material-ui": "https://esm.sh/@material-ui/core@next"
+		"ultra/cache": "https://deno.land/x/ultra@v0.3/cache.js"
 	}
 }

@@ -6,7 +6,11 @@ import ultraCache from "ultra/cache";
 
 const Index = lazy(() => import("./index.tsx"));
 
-const Ultra = ({ cache }) => {
+type UltraProps = {
+  cache: Map<unknown, unknown>;
+};
+
+const Ultra: React.FC<UltraProps> = ({ cache }) => {
   return (
     <SWRConfig value={{ provider: () => ultraCache(cache) }}>
       <Helmet>
